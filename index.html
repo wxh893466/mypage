@@ -1,11 +1,259 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>wangxinghong's web</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>lucky''ShiHer</title>
+    <meta name="keywords" content="个人网站,个人简历,lushixing,卢仕幸,web前端求职,web前端","web","web前端简历" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/b3_bg.css" />
+    <link rel="stylesheet" type="text/css" href="css/stage.css" />
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easie.js"></script>
+    <script type="text/javascript" src="js/velocity.min.js"></script>
 </head>
 <body>
-个人网站
+
+
+<!-- 小圆点 -->
+<div class="circles">
+    <ol>
+        <li class="cur"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+</div>
+
+<!-- header -->
+<div class="header">
+    <div class="header_in">
+        <div class="logo">
+            <h1><a href="index.html">web前端</a></h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="cur"><a href="javascript:;" data-go="1">首页</a></li>
+                <li><a href="javascript:;" data-go="2">开发技能</a></li>
+                <li><a href="javascript:;" data-go="3">一些项目</a></li>
+                <li><a href="javascript:;" data-go="4">关于我</a></li>
+                <li><a href="javascript:;" data-go="5">联系我</a></li>
+                <li><a href="http://varqianduan.com/" target="_block">个人博客</a></li>
+            </ul>
+        </div>
+        <div class="nav_btn">
+            <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1607805408&amp;site=qq&amp;menu=yes" target="_blank">联系我</a>
+        </div>
+    </div>
+</div>
+
+<!-- content -->
+<div class="content">
+    <!-- carousel -->
+    <div class="make page">
+        <div class="inner_c">
+            <img src="images/siyidazao.png" class="screen" alt="" />
+            <!-- <img src="images/screen01.png" class="screen01" alt="" />
+            <img src="images/screen02.png" class="screen02" alt="" />
+            <img src="images/screen03.png" class="screen03" alt="" />
+            <img src="images/screen04.png" class="screen04" alt="" />
+            <img src="images/screen05.png" class="screen05" alt="" />
+            <img src="images/screen06.png" class="screen06" alt="" /> -->
+            <div class="text"></div>
+        </div>
+        <div class="mouse"></div>
+    </div>
+
+    <!-- skill -->
+    <div class="skill page">
+        <div class="skill_in">
+            <div class="skill_l" id="skill_l">
+                <div class="c_list">
+                    <ul>
+                        <li><canvas id="demo-1" style="demo"></canvas></li>
+                        <li><canvas id="demo-2" style="demo"></canvas></li>
+                        <li><canvas id="demo-3" style="demo"></canvas></li>
+                        <li class="nomargin"><canvas id="demo-4" style="demo"></canvas></li>
+                        <li><canvas id="demo-5" style="demo"></canvas></li>
+                        <li><canvas id="demo-6" style="demo"></canvas></li>
+                        <li><canvas id="demo-7" style="demo"></canvas></li>
+                        <li><canvas id="demo-8" style="demo"></canvas></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill_r">
+                <p>熟练使用HTML，CSS实现移动端和 PC 端布局，能够解决常见兼容问题;</p>
+                <p>熟练独立制作页面，掌握 JS 原生语法、正则、闭包、作用域等概念;</p>
+                <p>熟悉面向对象编程思想，熟练使用 Ajax 和 JSON 数据处理机制和前后端交互;</p>
+                <p>熟悉HTML5+CSS3、Bootstrap，能够独立进行移动web开发;</p>
+                <p>能够使用 Seajs 和 Requirejs 进行前端模块化开发，了解 MVC、MVVM 模式思想;</p>
+                <p>熟练使用Gulp、Fis3前端自动化工具，使用过Git、Github版本管理工具;</p>
+                <p>熟悉Less、Sass、Stylus预处理语言，了解Node服务端开发;</p>
+                <p>使用过Backbone、Vue和Angular等框架进行相关移动web开发;</p>
+                <p>了解并使用过React框架;</p>
+                <p>了解PHP后台，熟悉Photoshop、Firework等设计软件;</p>
+                <p>具备良好的编程风格，代码简洁整齐，能熟练编写符合W3C标准的高效率代码。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- work -->
+    <div class="work page">
+        <div id="bg" class="" style="transform: scale(0.6); opacity: 1;">
+            <div class="row1">
+                <div class="orb1"><div></div></div>
+                <div class="orb2"><div></div></div>
+                <div class="orb1c"><div></div></div>
+                <div class="orb2c"><div></div></div>
+            </div>
+            <div class="row2">
+                <div class="orb1"><div></div></div>
+                <div class="orb2"><div></div></div>
+                <div class="orb1c"><div></div></div>
+                <div class="orb2c"><div></div></div>
+            </div>
+            <div class="row3">
+                <div class="orb1"><div></div></div>
+                <div class="orb2"><div></div></div>
+                <div class="orb1c"><div></div></div>
+                <div class="orb2c"><div></div></div>
+            </div>
+            <div class="row1c">
+                <div class="orb1"><div></div></div>
+                <div class="orb2"><div></div></div>
+                <div class="orb1c"><div></div></div>
+                <div class="orb2c"><div></div></div>
+            </div>
+            <div class="row2c">
+                <div class="orb1"><div></div></div>
+                <div class="orb2"><div></div></div>
+                <div class="orb1c"><div></div></div>
+                <div class="orb2c"><div></div></div>
+            </div>
+            <div class="row3c">
+                <div class="orb1"><div></div></div>
+                <div class="orb2"><div></div></div>
+                <div class="orb1c"><div></div></div>
+                <div class="orb2c"><div></div></div>
+            </div>
+        </div>
+
+        <div class="inner_c">
+            <!-- 旋转的正方形 -->
+            <!-- <div class="stage">
+                <div class="unit">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div> -->
+
+            <!-- 作品展示 -->
+            <div class="List">
+                <ul class="list0">
+                    <li><a href="http://www.xiamilock.com/" target="_blank">虾米锁屏</a></li>
+                    <li><a href="http://www.vjuad.com/" target="_blank">V&emsp;炬</a></li>
+                    <li class="no1"><a href="javascript:;">面向对象小游戏开发</a></li>
+                </ul>
+                <div class="list_ul">
+                    <ul>
+                        <li><a href="http://varqianduan.com/web/game2/flappybird" target="_blank">Flappybird小游戏</a></li>
+                        <li><a href="http://varqianduan.com/web/game2/tetris" target="_blank">俄罗斯方块</a></li>
+                        <li><a href="http://varqianduan.com/web/periodicTable" target="_blank">元素周期表</a></li>
+                        <li><a href="http://varqianduan.com/web/MVC" target="_blank">MVC搭建hao123</a></li>
+
+                    </ul>
+                </div>
+                <ul class="list1">
+                    <li><a href="http://varqianduan.com/web/backbone1" target="_blank">图片网</a></li>
+                    <li><a href="http://varqianduan.com/web/vue1" target="_blank">团购网</a></li>
+                    <li><a href="http://varqianduan.com/web/angular1" target="_blank">后台管理系统</a></li>
+                </ul>
+            </div>
+
+            <h3>这里是部分demo和作品，更多作品欢迎联系本人</h3>
+        </div>
+        <div class="popup_bg game1">
+            <div class="popup">
+                <span></span>
+                <h2>请选择</h2>
+                <p><a href="http://varqianduan.com/web/game1/balloon" target="_blank">打气球小游戏</a></p>
+                <p><a href="http://varqianduan.com/web/game1/cricketBall" target="_blank">挡板球小游戏</a></p>
+                <p><a href="http://varqianduan.com/web/game1/retroSnaker" target="_blank">贪吃蛇小游戏</a></p>
+            </div>
+        </div>
+        <div class="popup_bg game2">
+            <div class="popup">
+                <span></span>
+                <h2>请选择</h2>
+                <p><a href="javascript:;" target="_blank">Flappybird</a></p>
+                <p><a href="javascript:;" target="_blank">俄罗斯方块</a></p>
+                <p><a href="javascript:;" target="_blank">消消乐</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="about page">
+        <div class="inner_c">
+            <div class="me"></div>
+            <ul class="about-ul">
+                <li class="about-left">
+                    <a class="tx"><i class='plane' id="plane"></i><span class="qiut"></span></a>
+                    <p class="about-p">姓名：卢仕幸 <br>性别：男 <br>专业：计算机科学与技术 <br>求职意向：Web前端开发</p>
+                </li>
+                <li class="about-right">
+                    <h3>爱生活 &emsp;爱自己 &emsp;爱前端<span class="about-dot"></span></h3>
+                    <p class="right-p">
+                        <span>没有一颗心</span>
+                        <span>会因为追逐梦想而受伤</span>
+                        <span>梦想从未停止，努力做好每一个细节，只为自己代言</span>
+                        <span>两年Web开发经验，让我能承受较大工作压力和良好的团队协作精神</span>
+                        <span>爱生活、爱前端、懂设计。您还在等什么，赶快联系我吧！</span>
+                    </p>
+                </li>
+            </ul>
+
+            <!--简历 开始-->
+            <div class="btns">
+                <a class="cs" href="lushixing-web.pdf" target="_blank">查看我的简历</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- foot -->
+    <div class="foot page">
+        <div class="inner_c">
+            <div class="hd">
+                <div class="foot_left">
+                    <ul>
+                        <li>电话：18276636921</li>
+                        <li>QQ：1607805408 <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1607805408&amp;site=qq&amp;menu=yes" target="_blank">联系我</a></li>
+                        <li>邮箱：1607805408@qq.com</li>
+                        <li>微博：@卢仕幸</li>
+                    </ul>
+                </div>
+                <div class="foot_right">
+                    <img src="images/erweima.jpg" />
+                    <span>扫一扫加我微信</span>
+                </div>
+            </div>
+            <div><p>Copyright © 2016 Web All Right Reserved.</p></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/animate.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" id='water'></script>
+<!-- <script type="text/javascript" src="js/c.js"></script> -->
 </body>
 </html>
