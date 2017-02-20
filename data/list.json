@@ -10,7 +10,7 @@
     {
       "title": "小游戏",
       "imgurl": "tutu5.jpg",
-      "url": "/kk/web/flappybird/index.html",
+      "url": "web/flappybird/index.html",
       "description": "flappybird"
     }
   ]
