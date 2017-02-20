@@ -11,9 +11,10 @@ angular.module('app', [])
     .success(function (res){
         //请求数据成功就将数据保存在list变量中
         if(res && res.errno == 0){
-            $scope.list = res.data.sort(function(){
-                return Math.random() > .5 ? 1 : -1 ;
-            });
+            //$scope.list = res.data.sort(function(){
+            //    return Math.random() > .5 ? 1 : -1 ;
+            //});
+             $scope.list = res.data;
             // console.log($scope.list)
         }
     })

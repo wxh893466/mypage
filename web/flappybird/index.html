@@ -1,0 +1,143 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    canvas{
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="456" height="512" id="canvas">对不起，您不支持画布，请升级浏览器！</canvas>
+
+  <script type="text/javascript">
+//第一版：
+//尚未完成的有：
+//1. 小鸟的倾斜
+//2. 开始画面
+//3. 2位数以上的计分
+//4. 多排水管同时显示
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    var raf;
+
+    var sky = new Image();
+    var land = new Image();
+    var birds = new Image();
+    var pipedown = new Image();
+    var pipeup = new Image();
+    var count = new Image();
+    var b = parseInt(Math.random()*3);
+    var d = parseInt(Math.random()*2);
+    sky.src = "images/bg_"+ d +".png";
+    land.src = 'images/land.png';
+    birds.src = "images/bird"+ b +"_0.png";
+    pipeup.src = 'images/pipe_up.png';
+    pipedown.src = 'images/pipe_down.png';
+    count.src = 'images/font_048.png';
+      function map () {
+      for (var i=0;i<2;i++){
+          ctx.drawImage(sky,i*288,0,288,512);
+          ctx.drawImage(land,i*266,400,336,112);
+      }
+          ctx.drawImage(count,20,20,34,64);
+    }
+
+
+    var bird = {
+      x: 100,
+      y: 220,
+      vx: 5,
+      vy: 2,
+      src : "images/bird"+ b +"_0.png",
+      draw: function() {
+        birds.src = this.src;
+        ctx.drawImage(birds, this.x, this.y,60,60);
+      }
+    };
+
+    var pipe = {
+      x: 456,
+      upy: 220,
+      downy: -220,
+      vx: 1.5,
+      upsrc : 'images/pipe_up.png',
+      downsrc : 'images/pipe_down.png',
+      draw: function() {
+         pipeup.src = this.upsrc;
+         pipedown.src = this.downsrc;
+        ctx.drawImage(pipeup, this.x, this.upy,80,320);
+        ctx.drawImage(pipedown, this.x, this.downy,80,320);
+      }
+    };
+
+    function gameover () {
+      ctx.fillStyle = 'rgba(255,255,255,0.5)';
+      ctx.fillRect(0,0,canvas.width,canvas.height);
+      var over = new Image();   
+      over.src = "images/text_game_over.png";   
+  
+      over.onload = function(){
+        ctx.drawImage(over, 80,100,300,80);
+      }
+      canvas.addEventListener('click', function(e){
+        location.reload();
+     });
+    }
+
+    var m = 0;
+    var n = 0;
+    var scor = 0 ;
+    function draw() {
+      ctx.clearRect(0,0, canvas.width, canvas.height);
+      map();
+      m++;
+      if ((m)%15 == 0) {
+        n++;
+        if(n>2){n = 0 ;}
+        bird.src ="images/bird"+ b +"_"+n+".png";
+      };
+      // ctx.rotate(Math.PI*2/7);
+      bird.vy += 0.35;
+      bird.y += bird.vy;
+      pipe.x -= bird.vx;
+      if (pipe.x<-80) {
+        pipe.upy = Math.random()*150+140;
+        pipe.downy = pipe.upy-440;
+        pipe.x=456;
+      }
+
+      if (  pipe.x == 46) {
+        // console.log("11");
+        scor++;
+        if (scor>9) {scor = 0;};
+        count.src = "images/font_0"+(48+scor)+".png";
+      }
+
+      bird.draw();
+      pipe.draw();
+      raf = window.requestAnimationFrame(draw);
+      if ( (bird.y < pipe.downy + 305 || bird.y + 50 > pipe.upy) && (pipe.x < 150 && pipe.x > 50) ) {
+          window.cancelAnimationFrame(raf);
+          // console.log("11");
+          gameover();
+        }
+    }
+
+     canvas.addEventListener('click', function(e){
+      window.cancelAnimationFrame(raf);
+      bird.vy = -7;
+      raf = window.requestAnimationFrame(draw);
+     });
+
+
+    sky.onload = function(){
+      map();
+      bird.draw();
+     }
+  </script>
+</body>
+</html>
