@@ -11,8 +11,9 @@ angular.module('moviecat', [
 	//位模块定义一些常量 所有模块都可以获取
 	.constant('AppConfig',{
 		pageSize:10,
-		listApiAddress:'http://api.douban.com/v2/movie/',
-		detailApiAddress:'http://api.douban.com/v2/movie/subject/'
+		//兼容处理
+		listApiAddress:'//api.douban.com/v2/movie/',
+		detailApiAddress:'//api.douban.com/v2/movie/subject/'
 	})
 	.config(['$routeProvider', function ($routeProvider) {
 	$routeProvider.otherwise({redirectTo: '/in_theaters/1'});
