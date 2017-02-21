@@ -12,6 +12,12 @@
       "imgurl": "tutu5.jpg",
       "url": "web/flappybird/index.html",
       "description": "flappybird"
+    },
+    {
+      "title": "Angular项目",
+      "imgurl": "tutu5.jpg",
+      "url": "web/movie/index.html",
+      "description": "豆瓣电影"
     }
   ]
 }
