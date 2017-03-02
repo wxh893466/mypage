@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Leap,轻量级,全栈式,web开发框架" />
+    <meta name="description" content="leap是一个开源的轻量级全栈式web开发框架,具有极高的开发效率,学习简单,配置方便,性能优秀且无第三方依赖.具备良好的扩展性以及全栈统一的设计风格和思想,同时还内置了许多方便开发的特性,并且自带登录校验,CSRF校验功能可以轻松配置.无论企业应用开发还是互联网应用开发,都具有巨大的优势。" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leap-轻量级企业应用开发平台</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/prettify.css" type="text/css" />
+    <script type="text/javascript" language="javascript" src="js/prettify.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body onload="prettyPrint()" indexScroll>
+
+<!--导航-->
+
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="nav_con">
+        <div class="navbar-header">
+            　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+            <a href="##" class="navbar-brand ">
+                <div class="share-logo"></div>
+            </a>
+        </div>
+        <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="guide.html">指引</a></li>
+                <li><a href="blog.html">博客</a></li>
+                <!--<li><a href="##">问答</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--轮播-->
+<div class="banner">
+    <div class="share-banner_bg">
+        <span class="banner_logo  share-logo_big"></span>
+        <h1>轻量级企业应用开发平台</h1>
+        <p>开源轻量级全栈式web开发框架,开发更效率、学习更简便、性能更优秀。</p>
+        <a class="button" href="https://code.csdn.net/leapframework/framework.git" >Download</a>
+    </div>
+</div>
+
+<!--内容区-->
+
+<!--优势-->
+<section class="adv container">
+    <div class="title">
+        <i ></i>
+        <h2>优势</h2>
+        <h1>Advantages</h1>
+    </div>
+
+    <ul class="list-unstyled clearfix">
+        <li class="clearfix">
+            <i class="left">
+                <em class="share-depend"></em>
+            </i>
+            <dl>
+                <dt>简单的依赖配置</dt>
+                <dd>
+                    只需要配置一个maven依赖,就能把模板引擎,ORM框架,MVC框架的所有依赖全部引用。
+                </dd>
+            </dl>
+            <div class="adv_intro1 adv_intro">
+                <em></em>
+                <p>在一个新的<code>maven</code>工程中,只需要添加如下依赖:</p>
+									<pre class="prettyprint ">
+&lt;dependency&gt;
+    &lt;groupId&gt;org.leapframework&lt;/groupId&gt;
+    &lt;artifactId&gt;leap-fw&lt;/artifactId&gt;
+    &lt;version&gt;0.1.0-SNAPSHOT&lt;/version&gt;
+    &lt;type>pom&lt;/type&gt;
+&lt;/dependency&gt;</pre>
+                <p>就会添加所有的依赖包,各个模块间的依赖和优化已经全部配置好<br/>添加即用。</p>
+            </div>
+        </li>
+
+        <li>
+
+            <i class="left"><em class="share-performance"></em></i>
+            <dl>
+                <dt>优秀的运行性能</dt>
+                <dd>
+                    全栈性能完全不逊色于spring  mvc+mybayis+velocity的高效框架组合.
+                </dd>
+            </dl>
+            <div class="adv_intro2 adv_intro">
+                <em></em>
+                <div class="share-adv_intro1"></div>
+                <a href="#">查看详细的测试对比>></a>
+            </div>
+        </li>
+
+        <li>
+
+            <i class="left"><em class="share-safe"></em></i>
+            <dl>
+                <dt>便捷的安全配置</dt>
+                <dd>
+                    一行代码即可启用/关闭登录校验、CSRF校验等安全校验功能，轻松便捷。
+                </dd>
+            </dl>
+            <div class="adv_intro3 adv_intro">
+                <em></em>
+                <p>
+                    内置支持<code>CSRF</code>校验,一行代码启用<code>CSRF</code>校验；<br />
+                    内置登录校验,一行代码启用登录校验,轻松实现用户身份认证；<br />
+                    内置<code>HTML5</code> <code>CORS</code>标准支持,简单注解实现跨域资源共享；<br />
+                    模板引擎自动防<code>XSS</code>攻击,可以更加专注于业务逻辑。<br />
+                </p>
+            </div>
+
+        </li>
+
+        <li>
+            <i class="left"><em class="share-experience"></em></i>
+            <dl>
+                <dt>良好的开发体验</dt>
+                <dd>
+                    配合IDE(如Eclipse)自动完成功能编写模板代码和链式调用,可轻松访问绝大部分数据;开发过程舒适高效。
+                </dd>
+            </dl>
+            <div class="adv_intro4 adv_intro">
+                <em></em>
+                <p>模板语法简单,提高开发效率;静态资源自动标识版本,不用再与客户端缓存做斗争；<br/>
+                    <code>mvc</code>智能简单的参数绑定,遵循约定大于配置的原则,代码简洁,极少冗余注解；<br/>
+                    基于<code>ActiveRecord</code>的<code>ORM</code>框架,零<code>sql</code>完成绝大多数数据操作；<br/>
+                    智能控制反转和依赖注入,无需关注对象生命周期；<br/>
+                    框架内置语言包,大量工具类使用随心所欲。
+                </p>
+            </div>
+
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!--指引·博客·问答-->
+<section class="gbq">
+    <div class="title">
+        <i></i>
+        <h2>指引·博客·问答</h2>
+        <h1>Guide·Blog·Questions</h1>
+    </div>
+
+    <div class="guide">
+        <div class="container">
+            <div class="con_in clearfix">
+                <em class="share-icon_guide left"></em>
+                <div class="introduce left">
+                    <h2>跟随指引<br />快速搭建leap开发环境，创建你的工程</h2>
+                    <a href="guide.html">立即查看指引 >></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="blog">
+        <div class="container">
+            <div class="con_in clearfix">
+                <div class="left introduce">
+                    <h2>逛逛博客<br />了解Leap的最新动态</h2>
+                    <a href="blog.html">前往官方博客 >></a>
+                </div>
+                <em class="share-icon_blog left"></em>
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="container">
+            <div class="con_in clearfix">
+                <em class="share-icon_question left"></em>
+                <div class="left introduce">
+                    <h2>有疑问<br />前去提问，与Leap开发人员交流</h2>
+                    <a href="mailto:leap@bingosoft.net">立即邮件沟通 >></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--尾部-->
+<div class="footer clearfix">
+    <div class="container">
+        <h1 class="share-logo_footer left"></h1>
+        <ul class="list-inline left">
+            <li class="left">
+                <dl>
+                    <dt>Leap开发</dt>
+                    <dd><a href="article.html">指引</a></dd>
+                    <dd><a href="blog.html">博客</a></dd>
+                    <!--<dd><a href="#">问答</a></dd>-->
+                </dl>
+            </li>
+            <li class="left">
+                <dl>
+                    <dt>Leap资源</dt>
+                    <dd><a href="https://code.csdn.net/leapframework/framework.git">资源库</a></dd>
+                    <dd><a href="#">指引下载</a></dd>
+                </dl>
+            </li>
+            <li class="left">
+                <dl>
+                    <dt>关于</dt>
+                    <dd><a href="javascript:;">关于我们</a></dd>
+                    <dd><a href="javascript:;">友情链接</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>联系方式</dt>
+                    <!--<dd><a>新浪微博</a></dd>-->
+                    <dd><a href="mailto:leap@bingosoft.net">电子邮件</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<!--版权信息-->
+<div class="copyright">
+    Copyright&copy;2016  广州市品高软件开发有限公司版权所有 粤ICP备05028607号
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/bootstrap.js"></script>-->
+<script src="js/index.js"></script>
+</body>
+</html>

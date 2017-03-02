@@ -81,11 +81,17 @@ li, ol, ul {
 .list li .con p {
     padding: 10px;
     font-size: 1.6rem;
-
 }
 
 .list li .con p a {
     color: #3D444F;
+    display: block;
+    width: 100%;
+    text-align: center;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis ;
 }
 
 .perkCard-imageContainer {
@@ -136,7 +142,11 @@ li, ol, ul {
 #text a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.6rem
+    font-size: 1.6rem;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis ;
 }
 
 .svg-wrapper:hover #shape {

@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Leap,轻量级,全栈式,web开发框架,博客,Blog" />
+    <meta name="description" content="leap是一个开源的轻量级全栈式web开发框架,具有极高的开发效率,学习简单,配置方便,性能优秀且无第三方依赖.具备良好的扩展性以及全栈统一的设计风格和思想,同时还内置了许多方便开发的特性,并且自带登录校验,CSRF校验功能可以轻松配置.无论企业应用开发还是互联网应用开发,都具有巨大的优势。" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>leap 0.1.0-BETA版发布啦！</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/subpage.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+<!--导航-->
+
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="nav_con">
+        <div class="navbar-header">
+            　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+            <a href="index.html" class="navbar-brand ">
+                <div class="share-logo"></div>
+            </a>
+        </div>
+        <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="guide.html">指引</a></li>
+                <li  class="active"><a href="blog.html">博客</a></li>
+                <!--<li><a href="##">问答</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--内容区-->
+<div class="container con">
+    <div class="row">
+        <div class="col-xs-9">
+            <h1>Leap博客</h1>
+            <!--面包屑导航-->
+            <ol class="breadcrumb">
+                <li><a href="blog.html">博客</a></li>
+                <li class="active">leap 0.1.0-BETA版发布啦！</li>
+            </ol>
+            <h2>leap 0.1.0-BETA版发布啦！</h2>
+            <div class="article_con">
+                <p>leap 0.1.0-BETA版发布啦,本版本包含了模板引擎,ORM框架,MVC框架等.有任何问题可以联系邮箱
+                    <a href="#">leap@bingosoft.net</a href="#">彭鸿杰 。通过@component-namespace name {...}可以给组件(Components)创建
+                    命名空间，而且Descendents，Modifiers和States都嵌套在里面。
+                </p>
+                <h4>一. leap优势</h4>
+                <p>简单的依赖配置:只需要配置一个maven依赖,就能把模板引擎,ORM框架,MVC框架的所有依赖全部引用,不用考虑如何集成各个模块的框架问题.便捷的安全配置:登录校验,CSRF校验等安全校验功能,只需要一行代码便可启用和关闭,便捷轻松。</p>
+                <p>良好的开发体验:模板引擎基于html注释,配合IDE(如Eclipse)自动完成功能编写模板代码;基于ActiveRecord的ORM框架提供了丰富的数据访问接口,配合IDE的代码自动完成和链式调用,可以轻松完成绝大部分数据访问;开发过程舒适高效。</p>
+                <p>优秀的运行性能:leap具有优秀的运行性能,全栈性能完全不逊色于spring mvc+mybayis+velocity的高效框架组合。简单的依赖配置:只需要配置一 个maven依赖,就能把模板引擎,ORM框架,MVC框架的所有依赖全部引用,
+                    不用考虑如何集成各个模块的框架问题.简单的依赖配置:只需要配置一 个maven依赖,就能把模板引擎,ORM框架,MVC框架的所有依赖全部引用,不用考虑如何集成各个模块的框架问题.</p>
+                <h4>二. 简单的依赖配置</h4>
+                <p>简单的依赖配置:只需要配置一 个maven依赖,就能把模板引擎,ORM框架,MVC框架的所有依赖全部引用,不用考虑如何集成各个模块的框架问题.
+                    优秀的运行性能:leap具有优秀的运行性能,全栈性能完全不逊色于spring mvc+mybayis+velocity的高效框架组合.
+                    便捷的安全配置:登 录校验,CSRF校验等安全校验功能,只需要一行代码便可启用和关闭,便捷轻松.
+                    良好的开发体验:模板引擎基于html注释,配合IDE(如Eclipse)自动完成功能编写模板代码;基于ActiveRecord的ORM框架提供了丰富的数据访问接口,配合IDE的代码自动完成和链式调用,可以轻松完成绝大部分数据访问;开发过程舒适高效.
+                    在BEM中Block是设计中的最高一级，整个网站都是由很多个块构建而成。一个块在网站上是独立的，理论上说块可以放置在你的布局的任何一个地方，甚至还可以嵌套在另一个块里面。
+                </p>
+                <h4>三. 优秀的运行性能</h4>
+                <p>优秀的运行性能:leap具有优秀的运行性能,全栈性能完全不逊色于spring mvc+mybayis+velocity的高效框架组合。简单的依赖配置:只需要配置一 个maven依赖,就能把模板引擎,ORM框架,MVC框架的所有依赖全部引用,
+                    不用考虑如何集成各个模块的框架问题.简单的依赖配置:只需要配置一 个maven依赖,就能把模板引擎,ORM框架,MVC框架的所有依赖全部引用,不用考虑如何集成各个模块的框架问题.</p>
+                <p>leap是一个开源的轻量级全栈式web开发框架,具有极高的开发效率,学习简单,配置方便,性能优秀且无第三方依赖.具备良好的扩展性以及全栈统一的设计风格和思想,同时还内置了许多方便开发的特性,并且自带登录校验,CSRF校验功能可以轻松配置.无论企业应用开发还是互联网应用开发,都具有巨大的优势。</p>
+                <p>这里不多说，详细的使用方法和组件可以移步到github去了解。如果有任何疑问或者建议，可以发邮件给<a href="#">leap开发者</a>。</p>
+
+            </div>
+
+            <!--高速版-->
+            <div id="SOHUCS"></div>
+            <script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+            <script type="text/javascript">
+                window.changyan.api.config({
+                    appid: 'cyrALSpls',
+                    conf: 'prod_7ff1f5a80d7a86eb3bf016351ce902c6'
+                });
+            </script>
+
+
+        </div>
+        <div class="col-xs-3 right_out">
+            <div class="right_in">
+                <dl>
+                    <dt>教程</dt>
+                    <dd><a href="guide.html">查看用户指引教程>></a></dd>
+                    <dd><a href="#">下载用户指引文档>></a></dd>
+                </dl>
+                <dl>
+                    <dt>资源库</dt>
+                    <dd><a href="https://code.csdn.net/leapframework/framework.git">访问资源库>></a></dd>
+                </dl>
+                <dl>
+                    <dt>开发者邮箱</dt>
+                    <dd><a href="javascript:;">leap@bingosoft.net</a></dd>
+                </dl>
+                <dl class="hot_article">
+                    <dt>热门文章</dt>
+                    <dd><a href="#">leap 0.1.0-BETA性能测试</a></dd>
+                    <dd><a href="#">leap 0.1.0-BETA版发布啦！</a></dd>
+                </dl>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<!--尾部-->
+<div class="footer clearfix">
+    <div class="container">
+        <h1 class="share-logo_footer left"></h1>
+        <ul class="list-inline left">
+            <li class="left">
+                <dl>
+                    <dt>Leap开发</dt>
+                    <dd><a href="article.html">指引</a></dd>
+                    <dd><a href="blog.html">博客</a></dd>
+                    <!--<dd><a href="#">问答</a></dd>-->
+                </dl>
+            </li>
+            <li class="left">
+                <dl>
+                    <dt>Leap资源</dt>
+                    <dd><a href="https://code.csdn.net/leapframework/framework.git">资源库</a></dd>
+                    <dd><a href="#">指引下载</a></dd>
+                </dl>
+            </li>
+            <li class="left">
+                <dl>
+                    <dt>关于</dt>
+                    <dd><a href="javascript:;">关于我们</a></dd>
+                    <dd><a href="javascript:;">友情链接</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>联系方式</dt>
+                    <!--<dd><a>新浪微博</a></dd>-->
+                    <dd><a href="mailto:leap@bingosoft.net">电子邮件</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<!--版权信息-->
+<div class="copyright">
+    Copyright&copy;2016  广州市品高软件开发有限公司版权所有 粤ICP备05028607号
+</div>
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/bootstrap.js"></script>-->
+<script src="js/index.js"></script>
+</body>
+</html>
