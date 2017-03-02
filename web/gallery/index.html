@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+    <style type="text/css">
+        #list{
+            display: none;
+        }
+        .sliderBar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+
+    <!--侧边栏导航-->
+    <nav class="sliderBar">
+        <ul>
+            <li><a class="title" href="javascript:;">我的图片网</a</li>
+            <li><a href="">注册|登陆</a></li>
+            <li><a href="">寻求合作</a></li>
+            <li><a href="">联系我们</a></li>
+            <li><a href="">用户指南</a></li>
+            <li><a href="">帮助中心</a></li>
+            <li><a href="">关于我们</a></li>
+        </ul>
+    </nav>
+
+    <!--主页图片列表-->
+    <section id="list" class="list">
+        <header class="navbar">
+            <!--<div class="back"><span class="arrow"></span><span class="arrow green"></span></div>-->
+            <a href="javascript:;" id="hamburger">
+                <span></span>
+            </a>
+
+            <div class="login">登录</div>
+            <h1>热门图片</h1>
+        </header>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="搜索你想要的图片">
+            <spn class="search-btn">搜一搜</spn>
+        </div>
+        <ul class="nav clearfix">
+            <li data-id="0">摄影</li>
+            <li data-id="1">明星</li>
+            <li data-id="2">壁纸</li>
+            <li data-id="3">宠物</li>
+            <li data-id="4">动漫</li>
+            <li data-id="5">风景</li>
+            <li data-id="6">头像</li>
+            <li data-id="7">人物</li>
+        </ul>
+        <div class="image-list">
+            <div class="left-list"></div>
+            <div class="right-list"></div>
+        </div>
+        <div class="go-top">返回顶部</div>
+
+    </section>
+    <!--大图页面-->
+    <section id="layer" class="layer"></section>
+</div>
+
+<!--大图页模板-->
+<script type="text/template" id="layerTemplate">
+    <div class="img-container" style="<%=styles%>">
+        <div class="imgBox">
+            <img class="preImg"  alt="">
+            <img id="nowImg" src="<%=url%>" alt="">
+            <img class="nextImg"  alt="">
+        </div>
+    </div>
+    <header class="navbar hide">
+        <!--<a href="#" class="back"><span class="arrow"></span><span class="arrow green"></span></a>-->
+        <div class="back"><span class="arrow"></span><span class="arrow green"></span></div>
+        <h1 class="title"><%=title%></h1>
+    </header>
+</script>
+
+
+
+<script type="text/javascript" src="js/sea.js"></script>
+<script type="text/javascript" src="js/lib/seajs-css.js"></script>
+<script type="text/javascript" src="js/lib/seajs-preload.js"></script>
+<script type="text/javascript" src="js/lib/zepto.js"></script>
+<script type="text/javascript" src="js/lib/underscore.js"></script>
+<script type="text/javascript" src="js/lib/backbone.js"></script>
+
+<script type="text/javascript">
+    seajs.config({
+//            preload:["lib/zepto","lib/underscore","lib/backbone"]
+        preload:["lib/zepto.touch","lib/zepto.touch"]
+    })
+    seajs.use("app", function (app) {
+        app.install()
+
+    })
+</script>
+
+</body>
+</html>
