@@ -60,6 +60,8 @@ var Home = Vue.extend({
     created: function () {
         // 显示搜索框
         this.$parent.hideSearch = true;
+        //掩藏返回键
+        this.$parent.hideBack = false;
         var that = this;
         Util.ajax('data/home.json', function (res) {
             // 将返回的数据转化为json
